@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+section {
+  height: 100vh;
+}
+
+header {
+  padding-top: 50px;
+}
+.bg {
+  background-image: url(images/mine.JPG);
+  background-size: cover;
+}
+.htext {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.item {
+  height: 80vh;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+nav li {
+  font-size: 20px;
+  list-style: none;
+  background-color: rgba(256, 256, 256, 0.5);
+  padding: 15px;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav li:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+#app {
+  background-color: aqua;
+}
+#profile {
+  background-color: aquamarine;
+}
+#contact {
+  background-color: blue;
+}
