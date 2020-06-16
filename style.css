@@ -7,9 +7,14 @@
 section {
   height: 100vh;
 }
+.fix-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 
 header {
-  padding-top: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .bg {
   background-image: url(images/mine.JPG);
@@ -20,29 +25,24 @@ header {
   font-size: 25px;
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 15px;
-}
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  width: 40%;
+  display: inline-block;
 }
 .item {
-  height: 80vh;
-  width: 200px;
-  display: flex;
-  align-items: center;
+  width: 59%;
+  display: inline-block;
+  text-align: center;
 }
 nav li {
   font-size: 20px;
   list-style: none;
   background-color: rgba(256, 256, 256, 0.5);
-  padding: 15px;
-  width: 100px;
-  text-align: center;
+  padding: 10px;
   border-radius: 5px;
-  margin: 20px;
+  display: inline-block;
+  margin: 10px;
+  width: 100px;
 }
 a {
   text-decoration: none;
@@ -53,11 +53,110 @@ nav li:hover {
 }
 
 #app {
-  background-color: aqua;
+  height: 1100px;
+  width: 100%;
 }
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  background: url("images/mine.JPG") no-repeat;
+  background-size: cover;
+}
+.bg-videos {
+  width: 100%;
+  height: 1000px;
+  /* padding: 10px; */
+  position: relative;
+  z-index: 2;
+  /* background-color: rgba(256, 256, 256, 0.3); */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.sb-title {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.card {
+  width: 350px;
+  height: 420px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  margin: 20px;
+}
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  background-size: cover;
+  height: auto;
+}
+.card-content {
+  padding: 20px;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+.card-link a {
+  text-decoration: none;
+  color: #0bd;
+  margin: 0 10px;
+}
+.card-link a:hover {
+  color: #0090aa;
+}
+
 #profile {
-  background-color: aquamarine;
+}
+.bg1 {
+  background-image: url(images/mv.png);
+  background-size: cover;
+}
+.bg-img {
+  width: 30vw;
+}
+.bg-white {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(256, 256, 256, 0.3);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 #contact {
-  background-color: blue;
+  background-color: white;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #174a5c;
+  color: white;
+  text-align: center;
+}
+ul.footer-menu li {
+  display: inline;
 }
